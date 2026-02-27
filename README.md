@@ -21,8 +21,7 @@ The quiz walks users through a 7-scenario negotiation assessment:
 2. **Context** — User selects their professional context (Real Estate / Business Leader)
 3. **Calibration** — Collects professional role and annual transaction volume (GDV slider)
 4. **7 Scenarios** — Multiple-choice negotiation scenarios scored 1–3 per question
-5. **Loading** — Animated analysis screen while webhook/email calls complete
-6. **Results** — Competency breakdown bars, estimated financial impact, and CTA to book training
+5. **Results** — Competency breakdown bars, estimated financial impact, and CTA to book training
 
 ### Scoring
 
