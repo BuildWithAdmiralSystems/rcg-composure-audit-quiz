@@ -2,7 +2,7 @@
     const CFG = {
         WEBHOOK: 'https://hook.eu2.make.com/YOUR_WEBHOOK_ID',
         BOOK_URL: '/contact',
-        LOOPS_API_KEY: '77b1203684adef8831e2d5e7b6230ed1'  // 🔑 Replace with your Loops.so API key
+        LOOPS_API_KEY: 'YOUR_LOOPS_API_KEY'  // 🔑 Replace with your Loops.so API key
     };
 
     const PROFILES = [
