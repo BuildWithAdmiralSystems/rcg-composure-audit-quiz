@@ -756,7 +756,7 @@
     }
 
     window.book = function () { window.location.href = '/contact'; };
-    window.methodology = function () { window.location.href = '/methodology-2'; };
+    window.methodology = function () { window.location.href = '/methodology'; };
     window.retake = function () { location.reload(); };
 
     // Listen for Webflow Triggers
