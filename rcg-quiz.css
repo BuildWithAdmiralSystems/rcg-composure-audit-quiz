@@ -682,6 +682,24 @@
         }
     }
 
+    @media(max-width: 366px) {
+        #rcg-quiz-app-modal .rcg-btn-row,
+        #rcg-quiz-app-modal .rcg-q-nav {
+            flex-direction: column-reverse;
+            gap: 16px;
+        }
+
+        #rcg-quiz-app-modal .rcg-btn-row button,
+        #rcg-quiz-app-modal .rcg-q-nav button {
+            width: 100%;
+            justify-content: center;
+        }
+
+        #rcg-quiz-app-modal .rcg-screen-title {
+            font-size: 22px;
+        }
+    }
+
     /* Methodology content classes */
     #rcg-quiz-app-modal .m-section {
         margin-bottom: 20px;
