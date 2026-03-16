@@ -23,6 +23,10 @@
         { t: 'Forward-Funding', d: 'Investment model where funder commits capital before development completion.' }
     ];
 
+    let user = {};
+    let answers = [];
+    let curQ = 0;
+
     const QS = [
         { tag: 'Pressure-Induced Errors', q: 'A £25M disposal is at the exchange stage. The counterparty legal team introduces a late, complex warranty demand to chip the price by £500k. Your lead agent fears the deal will unravel.', opts: ['Concede the margin to secure the exchange immediately.', 'Split the difference to show good faith.', 'Pause the negotiation completely to signal indifference.'], scores: [1, 2, 3] },
         { tag: 'Influence Without Authority', q: 'You are in a Joint Venture dialogue with a Local Authority partner who is stalling on a key planning density agreement.', opts: ['Escalate to legal or political channels.', 'Accept the lower density to maintain relationship.', 'Reframe the stakeholder vector victory conditions.'], scores: [1, 2, 3] },
