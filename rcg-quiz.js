@@ -546,8 +546,14 @@
 
     // Quiz App UI Controls
     window.openQuizApp = function () {
-        const modal = document.getElementById('rcg-quiz-app-modal');
-        if (modal && !modal.querySelector('.rcg-quiz-container')) {
+        let modal = document.getElementById('rcg-quiz-app-modal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'rcg-quiz-app-modal';
+            modal.className = 'rcg-modal-overlay';
+            document.body.appendChild(modal);
+        }
+        if (!modal.querySelector('.rcg-quiz-container')) {
             modal.innerHTML = UI_TEMPLATE;
             // Re-populate dynamic content after injection
             initDynamicContent();
@@ -759,11 +765,11 @@
     window.methodology = function () { window.location.href = '/methodology'; };
     window.retake = function () { location.reload(); };
 
-    // Listen for Webflow Triggers
+    // Listen for Webflow Triggers (use capture phase to fire before Webflow's handlers)
     document.addEventListener('click', function (e) {
         const t = e.target.closest('[data-quiz-trigger="open"]');
-        if (t) { e.preventDefault(); openQuizApp(); }
-    });
+        if (t) { e.preventDefault(); e.stopPropagation(); openQuizApp(); }
+    }, true);
 
     function initDynamicContent() {
         // Populate dynamic content
